@@ -1,0 +1,103 @@
+Script started on 2022-03-30 04:03:15+03:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="84" LINES="11"]
+]0;parallels@ubuntu-linux-20-04-desktop: ~/Desktop/Shell/Shell[01;32mparallels@ubuntu-linux-20-04-desktop[00m:[01;34m~/Desktop/Shell/Shell[00m$ make clean
+rm -f *.o *.a *.so *.gch shell
+]0;parallels@ubuntu-linux-20-04-desktop: ~/Desktop/Shell/Shell[01;32mparallels@ubuntu-linux-20-04-desktop[00m:[01;34m~/Desktop/Shell/Shell[00m$ make shell
+gcc -Wall -g -c shell.c
+gcc -Wall -g -c libShell.c
+gcc -Wall -g -c shellParsing.c
+ar -rcs libShell.a libShell.o shellParsing.o
+gcc -Wall -g -o shell shell.o libShell.a
+]0;parallels@ubuntu-linux-20-04-desktop: ~/Desktop/Shell/Shell[01;32mparallels@ubuntu-linux-20-04-desktop[00m:[01;34m~/Desktop/Shell/Shell[00m$ ./shell
+shell: echo hello
+shell: hello
+shell: dir
+shell: ---------------------------
+shell: typescript
+shell: shellParsing.h
+shell: libShell.h
+shell: shell
+shell: ..
+shell: shellParsing.o
+shell: shell.o
+shell: makefile
+shell: shell.c
+shell: libShell.a
+shell: libShell.c
+shell: shellParsing.c
+shell: .
+shell: libShell.o
+shell: ---------------------------
+shell: cwd
+shell: /home/parallels/Desktop/Shell/Shell
+shell: copy shellParsing.c shellParsing1.c
+shell: shellParsing1.c
+shell: dir
+shell: ---------------------------
+shell: typescript
+shell: shellParsing.h
+shell: libShell.h
+shell: shell
+shell: ..
+shell: shellParsing1.c
+shell: shellParsing.o
+shell: shell.o
+shell: makefile
+shell: shell.c
+shell: libShell.a
+shell: libShell.c
+shell: shellParsing.c
+shell: .
+shell: libShell.o
+shell: ---------------------------
+shell: delete shellParsing1.c
+shell: dir
+shell: ---------------------------
+shell: typescript
+shell: shellParsing.h
+shell: libShell.h
+shell: shell
+shell: ..
+shell: shellParsing.o
+shell: shell.o
+shell: makefile
+shell: shell.c
+shell: libShell.a
+shell: libShell.c
+shell: shellParsing.c
+shell: .
+shell: libShell.o
+shell: ---------------------------
+shell: tcp 10000
+shell: Connecting to localhost:10000
+Connection failed with error number: 111
+shell: Error, check server status and try again.
+shell: echo now openning the server..
+shell: now openning the server..
+shell: tcp 10000
+shell: Connecting to localhost:10000
+shell: Connected to TCP Server, redirecting output...
+echo hi
+ls /home/parallels/
+local
+shell: ls /home/parallels/
+adehome    main		  Networking-E5  snap		 telnet		Videos
+Desktop    Music	  Pictures	 sniffNspoof.c	 telnetsniff.c
+Documents  Networking3_5  Public	 spoofed_icmp	 Templates
+Downloads  Networking-E4  readme.md	 spoofed_icmp.c  vcpkg
+shell: echo ls is system call by fork/exec/wait
+shell: ls is system call by fork/exec/wait
+shell: cwd
+shell: /home/parallels/Desktop/Shell/Shell
+shell: chdir 120
+shell: cd ..
+shell: cwd
+shell: /home/parallels/Desktop/Shell
+shell: cd ..
+shell: cwd
+shell: /home/parallels/Desktop
+shell: exit
+
+shell: Good bye!
+]0;parallels@ubuntu-linux-20-04-desktop: ~/Desktop/Shell/Shell[01;32mparallels@ubuntu-linux-20-04-desktop[00m:[01;34m~/Desktop/Shell/Shell[00m$ exit
+
+Script done on 2022-03-30 04:07:40+03:00 [COMMAND_EXIT_CODE="0"]
